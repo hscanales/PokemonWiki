@@ -4,6 +4,8 @@ block content
   div(class="header")
     h1= title
     p Welcome to #{title}
+    img(src="https://i.kym-cdn.com/photos/images/newsfeed/000/366/442/c18.jpg", alt="")
+
   div(class="formularioPuchamon")
     h1 Inserta tu Puchamon a tu "Administrador de Puchamones"
     form#Creacion(action="", method="get")
@@ -21,4 +23,30 @@ block content
           th # Pokedex
           th Opciones
       tbody
+        tr 
+          th placeholder
+          th Motapod
+          th Quemar
+          th #0011
+          th 
+            a(href="#") 
+              img(src="https://d1nhio0ox7pgb.cloudfront.net/_img/g_collection_png/standard/256x256/pencil.png", alt="", srcset="")
+            a(href="#")
+              img(src="https://iconsplace.com/wp-content/uploads/_icons/ffa500/256/png/trash-icon-11-256.png", alt="", srcset="")
+        tr
+          th placeholder2
+          th Pitochu
+          th Toquetazos
+          th #0069
+          th 
+            button Edit
+
+    div#modal(class="modal")
+      div(class="modal-content")
+        span(class="close")
+          form#update(action="", method="get")
+            input#Nombre(type="text", name="name" placeholder="Motapod")
+            input#Atk(type="text", name="atk" placeholder="Endurecimiento ;) ")
+            input#Pokedex(type="number" name="poke" placeholder="Pokedex #")
+            input(type="submit", value="SUBMIT")
 
