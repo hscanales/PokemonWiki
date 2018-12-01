@@ -1,6 +1,7 @@
 extends layout
 
 block content
+  
   div(class="header")
     h1= title
     p Welcome to #{title}
@@ -28,25 +29,26 @@ block content
           th Motapod
           th Quemar
           th #0011
-          th 
-            a(href="#") 
-              img(src="https://d1nhio0ox7pgb.cloudfront.net/_img/g_collection_png/standard/256x256/pencil.png", alt="", srcset="")
-            a(href="#")
-              img(src="https://iconsplace.com/wp-content/uploads/_icons/ffa500/256/png/trash-icon-11-256.png", alt="", srcset="")
+          th  
+            img(src="https://d1nhio0ox7pgb.cloudfront.net/_img/g_collection_png/standard/256x256/pencil.png", alt="", srcset="" onclick="abrir()")
+            img(src="https://iconsplace.com/wp-content/uploads/_icons/ffa500/256/png/trash-icon-11-256.png", alt="", srcset="")
         tr
           th placeholder2
           th Pitochu
           th Toquetazos
           th #0069
           th 
-            button Edit
+            img(src="https://d1nhio0ox7pgb.cloudfront.net/_img/g_collection_png/standard/256x256/pencil.png", alt="", srcset="", onclick="abrir()")
+            img(src="https://iconsplace.com/wp-content/uploads/_icons/ffa500/256/png/trash-icon-11-256.png", alt="", srcset="")
+            
 
     div#modal(class="modal")
       div(class="modal-content")
-        span(class="close")
-          form#update(action="", method="get")
-            input#Nombre(type="text", name="name" placeholder="Motapod")
-            input#Atk(type="text", name="atk" placeholder="Endurecimiento ;) ")
-            input#Pokedex(type="number" name="poke" placeholder="Pokedex #")
-            input(type="submit", value="SUBMIT")
+        form#update(action="", method="get")
+          input#Nombre(type="text", name="name" placeholder="Motapod")
+          input#Atk(type="text", name="atk" laceholder="Endurecimiento ;) ")
+          input#Pokedex(type="number" name="poke" placeholder="Pokedex #")
+          img(src="https://openclipart.org/download/257462/Checkmark.svg", alt="", srcset="" onclick="cerrar()")
+          img(src="https://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-11/256/cross-mark.png", alt="", srcset="" onclick="cerrar()")
 
+  
