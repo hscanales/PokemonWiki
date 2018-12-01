@@ -1,8 +1,55 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color:#2B3E50;
+
 }
 
 a {
   color: #00B7FF;
+}
+
+*{
+  box-sizing: border-box;
+  
+}
+
+.header{
+  
+  align-content: center;
+  box-sizing: border-box;
+  background-color:rgb(58, 52, 112);
+  padding: 5vh;
+  padding-top: 1em;  
+  color: white;
+  margin-top: 0;
+}
+
+.formularioPuchamon {
+  padding-top: 1em;
+  align-content: space-between;
+  padding: 5vh;
+  color: white;
+  background-color: rgb(66, 143, 139);
+}
+
+.formularioPuchamon input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px 12px;
+  margin: 8px 0;
+}
+
+.formularioPuchamon input[type=submit]{
+  background-color: red;
+  border: none;
+  color: white;
+  font-size: 4em;
+}
+
+th{
+  font-size: 2rem;
+  background-color: beige;
+  color: black;
+  width: 25%;
 }

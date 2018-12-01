@@ -1,5 +1,24 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  div(class="header")
+    h1= title
+    p Welcome to #{title}
+  div(class="formularioPuchamon")
+    h1 Inserta tu Puchamon a tu "Administrador de Puchamones"
+    form#Creacion(action="", method="get")
+      input#Nombre(type="text", name="name" placeholder="Motapod")
+      input#Atk(type="text", name="atk" placeholder="Endurecimiento ;) ")
+      input#Pokedex(type="number" name="poke" placeholder="Pokedex #")
+      input(type="submit", value="SUBMIT")
+  div(class="PaolaWrap")
+    table
+      thead
+        tr
+          th id
+          th Nombre
+          th Atk Favorito
+          th # Pokedex
+          th Opciones
+      tbody
+
